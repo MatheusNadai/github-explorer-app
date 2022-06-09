@@ -45,6 +45,7 @@ function RepositoriesProvider({ children }: RepositoriesProviderProps) {
 
   async function addRepository(repositoryName: string) {
     try {
+      
       const repoAlreadyExists = repositories.find(repository => repository.full_name === repositoryName);
 
       if (repoAlreadyExists) {
